@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jean Mervin Fajardo — Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+(function(){
+  var saved = localStorage.getItem('theme');
+  var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+</head>
+<body>
+
+<header>
+  <div class="header-bar">
+    <div class="logo">
+      <span class="logo-mark">JM</span>
+      <span class="logo-name">Jean Mervin Fajardo</span>
+    </div>
+    <div class="header-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+      <span class="theme-icon theme-icon-sun">&#9728;</span>
+      <span class="theme-icon theme-icon-moon">&#9789;</span>
+    </button>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-group">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+    </div>
+    </div>
+  </div>
+</header>
+
+<section class="services-hero">
+  <span class="tag">WHAT I OFFER</span>
+  <h1 class="center">Solutions to help your business go digital</h1>
+  <p class="body-lg">From a simple business website to a full custom web application, here is how I can help.</p>
+</section>
+
+<section class="services-grid">
+  <div class="row">
+    <div class="service-card-big">
+      <span class="icon-chip">01</span>
+      <h3 style="font-size:20px;">Website Design &amp; Development</h3>
+      <p class="body">Custom, responsive websites built with clean semantic HTML, CSS, and JavaScript.</p>
+      <ul>
+        <li>Responsive, mobile-first layouts</li>
+        <li>Custom UI design, not templates</li>
+        <li>SEO-friendly structure</li>
+      </ul>
+    </div>
+    <div class="service-card-big">
+      <span class="icon-chip">02</span>
+      <h3 style="font-size:20px;">Full-Stack Web Applications</h3>
+      <p class="body">End-to-end apps with Flask backends, PostgreSQL databases, and secure user flows.</p>
+      <ul>
+        <li>Flask backend &amp; REST-style routes</li>
+        <li>PostgreSQL / Neon database design</li>
+        <li>Authentication, CSRF &amp; rate limiting</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="service-card-big">
+      <span class="icon-chip">03</span>
+      <h3 style="font-size:20px;">Database Design &amp; Migration</h3>
+      <p class="body">Structuring and migrating data so your application stays fast and reliable as it grows.</p>
+      <ul>
+        <li>Schema design &amp; normalization</li>
+        <li>Migration between providers (e.g. Render → Neon)</li>
+        <li>Bulk data operations &amp; reporting</li>
+      </ul>
+    </div>
+    <div class="service-card-big">
+      <span class="icon-chip">04</span>
+      <h3 style="font-size:20px;">Deployment &amp; Maintenance</h3>
+      <p class="body">Getting your project live and keeping it running smoothly after launch.</p>
+      <ul>
+        <li>Cloud deployment on Render</li>
+        <li>Ongoing bug fixes &amp; feature updates</li>
+        <li>Basic technical support &amp; monitoring</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="process-section">
+  <div class="process-head">
+    <p class="eyebrow">HOW I WORK</p>
+    <h2>A simple, transparent process</h2>
+  </div>
+  <div class="process-row">
+    <div class="process-step">
+      <span class="num-box">01</span>
+      <h3>Discover</h3>
+      <p>We talk about your goals, audience, and what your business needs from a website.</p>
+    </div>
+    <div class="process-step">
+      <span class="num-box">02</span>
+      <h3>Design</h3>
+      <p>I map out the structure and design a look and feel that fits your brand.</p>
+    </div>
+    <div class="process-step">
+      <span class="num-box">03</span>
+      <h3>Develop</h3>
+      <p>I build the site or app, keeping you updated at each milestone.</p>
+    </div>
+    <div class="process-step">
+      <span class="num-box">04</span>
+      <h3>Deploy</h3>
+      <p>I launch your project, test it live, and hand over a working, documented site.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta-wrap" style="padding-top:90px;">
+  <div class="cta-banner">
+    <div>
+      <h2>Not sure which service you need?</h2>
+      <p>Send me a message and we'll figure out the right fit together.</p>
+    </div>
+    <a href="contact.html" class="btn btn-white">Contact Me</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col1">
+      <div class="logo">
+        <span class="logo-mark">JM</span>
+        <span class="logo-name">Jean Mervin Fajardo</span>
+      </div>
+      <p class="body">IT student and freelance full-stack developer building fast, reliable web apps for small businesses in Los Baños, Laguna and beyond.</p>
+      <div class="social">
+        <a href="https://github.com/JeanMervin">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <p class="eyebrow-muted">QUICK LINKS</p>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <p class="eyebrow-muted">GET IN TOUCH</p>
+      <a href="#" class="copy-email" data-email="jmg.fajardo.26@gmail.com">jmg.fajardo.26@gmail.com</a>
+      <a href="#">+63 915 648 0805</a>
+      <a href="#">Los Baños, Laguna, PH</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="caption">© 2026 Jean Mervin Fajardo. All rights reserved.</span>
+    <span class="caption">Built with care in the Philippines</span>
+  </div>
+</footer>
+
+<button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jean Mervin Fajardo — About</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+(function(){
+  var saved = localStorage.getItem('theme');
+  var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+</head>
+<body>
+
+<header>
+  <div class="header-bar">
+    <div class="logo">
+      <span class="logo-mark">JM</span>
+      <span class="logo-name">Jean Mervin Fajardo</span>
+    </div>
+    <div class="header-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+      <span class="theme-icon theme-icon-sun">&#9728;</span>
+      <span class="theme-icon theme-icon-moon">&#9789;</span>
+    </button>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-group">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+    </div>
+    </div>
+  </div>
+</header>
+
+<section class="about-hero">
+  <div class="hero-left">
+    <span class="tag">ABOUT ME</span>
+    <h1 style="font-size:40px;">The developer behind the code</h1>
+    <p class="body-lg">Motivated Information Technology student with hands-on full-stack development experience, having independently built and deployed a multi-branch inventory system and a point-of-sale platform for an active small business. Comfortable across the stack, from Flask backend logic and PostgreSQL database design to front-end interfaces and cloud deployment.</p>
+    <div class="stats-row">
+      <div class="stat"><h3>1+ yr</h3><p>Web Development</p></div>
+      <div class="stat"><h3>2</h3><p>Live deployed projects</p></div>
+      <div class="stat"><h3>BS IT</h3><p>LSPU Los Baños</p></div>
+    </div>
+  </div>
+  <img class="about-photo" src="images/about-photo.jpg" alt="Jean Mervin Fajardo reviewing photos on a camera">
+</section>
+
+<section class="section-alt section" style="padding-top:80px;padding-bottom:80px;">
+  <p class="eyebrow">MY TOOLKIT</p>
+  <h2 style="margin-top:10px;">Skills &amp; tools I rely on</h2>
+  <div class="skills-grid">
+    <div class="skill-col">
+      <div class="skill-row">
+        <div class="skill-top"><span>HTML</span><span>90%</span></div>
+        <div class="skill-track"><div class="skill-fill" style="width:90%;"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span>CSS</span><span>85%</span></div>
+        <div class="skill-track"><div class="skill-fill" style="width:85%;"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span>JavaScript</span><span>75%</span></div>
+        <div class="skill-track"><div class="skill-fill" style="width:75%;"></div></div>
+      </div>
+    </div>
+    <div class="skill-col">
+      <div class="skill-row">
+        <div class="skill-top"><span>Python / Flask</span><span>85%</span></div>
+        <div class="skill-track"><div class="skill-fill" style="width:85%;"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span>PostgreSQL</span><span>75%</span></div>
+        <div class="skill-track"><div class="skill-fill" style="width:75%;"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-top"><span>Git &amp; GitHub</span><span>80%</span></div>
+        <div class="skill-track"><div class="skill-fill" style="width:80%;"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <p class="eyebrow">EXPERIENCE &amp; EDUCATION</p>
+  <h2 style="margin-top:10px;">My path so far</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="timeline-date">2024 – Present</span>
+      <span class="timeline-dot"></span>
+      <div class="timeline-body">
+        <h3>BS Information Technology</h3>
+        <p class="org">Laguna State Polytechnic University – Los Baños</p>
+        <p class="desc">Full-stack development coursework alongside independent freelance projects.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-date">2024</span>
+      <span class="timeline-dot"></span>
+      <div class="timeline-body">
+        <h3>Work Immersion Student</h3>
+        <p class="org">Municipality of Los Baños – ICT Systems Office</p>
+        <p class="desc">Front office support and client service in a government IT office, with exposure to real-world technical support.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-date">2022 – 2024</span>
+      <span class="timeline-dot"></span>
+      <div class="timeline-body">
+        <h3>Senior High School</h3>
+        <p class="org">TRACE College</p>
+        <p class="desc">Completed senior high with a foundation that led into IT studies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-wrap">
+  <div class="cta-banner">
+    <div>
+      <h2>Want to work together?</h2>
+      <p>I'm open to freelance projects and collaborations.</p>
+    </div>
+    <a href="contact.html" class="btn btn-white">Get In Touch</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col1">
+      <div class="logo">
+        <span class="logo-mark">JM</span>
+        <span class="logo-name">Jean Mervin Fajardo</span>
+      </div>
+      <p class="body">IT student and freelance full-stack developer building fast, reliable web apps for small businesses in Los Baños, Laguna and beyond.</p>
+      <div class="social">
+        <a href="https://github.com/JeanMervin">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <p class="eyebrow-muted">QUICK LINKS</p>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <p class="eyebrow-muted">GET IN TOUCH</p>
+      <a href="#" class="copy-email" data-email="jmg.fajardo.26@gmail.com">jmg.fajardo.26@gmail.com</a>
+      <a href="#">+63 915 648 0805</a>
+      <a href="#">Los Baños, Laguna, PH</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="caption">© 2026 Jean Mervin Fajardo. All rights reserved.</span>
+    <span class="caption">Built with care in the Philippines</span>
+  </div>
+</footer>
+
+<button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

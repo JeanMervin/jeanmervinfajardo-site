@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jean Mervin Fajardo — Contact</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+(function(){
+  var saved = localStorage.getItem('theme');
+  var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+</head>
+<body>
+
+<header>
+  <div class="header-bar">
+    <div class="logo">
+      <span class="logo-mark">JM</span>
+      <span class="logo-name">Jean Mervin Fajardo</span>
+    </div>
+    <div class="header-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+      <span class="theme-icon theme-icon-sun">&#9728;</span>
+      <span class="theme-icon theme-icon-moon">&#9789;</span>
+    </button>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-group">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+    </div>
+    </div>
+  </div>
+</header>
+
+<section class="contact-hero">
+  <span class="tag">GET IN TOUCH</span>
+  <h1 class="center">Let's build something great together</h1>
+  <p class="body-lg">Have a project, a question, or just want to say hi? Fill out the form or reach me directly.</p>
+</section>
+
+<section class="contact-main">
+  <form class="form-card" id="contactForm" novalidate>
+    <h3 style="font-size:20px;">Send a message</h3>
+    <div class="form-row">
+      <div class="field">
+        <label for="cf-name">Full Name</label>
+        <input type="text" id="cf-name" name="name" placeholder="Juan Dela Cruz" required>
+      </div>
+      <div class="field">
+        <label for="cf-email">Email Address</label>
+        <input type="email" id="cf-email" name="email" placeholder="juan@email.com" required>
+      </div>
+    </div>
+    <div class="field">
+      <label for="cf-subject">Subject</label>
+      <input type="text" id="cf-subject" name="subject" placeholder="What is this about?" required>
+    </div>
+    <div class="field">
+      <label for="cf-message">Message</label>
+      <textarea id="cf-message" name="message" placeholder="Tell me about your project..." required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" style="width:fit-content;">Send Message</button>
+    <p class="form-note" id="formNote" aria-live="polite"></p>
+  </form>
+
+  <div class="info-col">
+    <div class="info-card">
+      <h3 style="font-size:18px;">Contact Information</h3>
+      <div class="info-row">
+        <span class="info-dot"></span>
+        <div><div class="label">EMAIL</div><div class="value"><a href="#" class="copy-email" data-email="jmg.fajardo.26@gmail.com">jmg.fajardo.26@gmail.com</a></div></div>
+      </div>
+      <div class="info-row">
+        <span class="info-dot"></span>
+        <div><div class="label">PHONE</div><div class="value">+63 915 648 0805</div></div>
+      </div>
+      <div class="info-row">
+        <span class="info-dot"></span>
+        <div><div class="label">LOCATION</div><div class="value">Los Baños, Laguna, Philippines</div></div>
+      </div>
+      <div class="info-row">
+        <span class="info-dot"></span>
+        <div><div class="label">AVAILABILITY</div><div class="value">Open to freelance projects</div></div>
+      </div>
+    </div>
+    <div class="info-card">
+      <h3 style="font-size:18px;">Find me online</h3>
+      <div class="soc-row">
+        <a href="https://github.com/JeanMervin">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="https://jeanmervin.netlify.app/">Portfolio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col1">
+      <div class="logo">
+        <span class="logo-mark">JM</span>
+        <span class="logo-name">Jean Mervin Fajardo</span>
+      </div>
+      <p class="body">IT student and freelance full-stack developer building fast, reliable web apps for small businesses in Los Baños, Laguna and beyond.</p>
+      <div class="social">
+        <a href="https://github.com/JeanMervin">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <p class="eyebrow-muted">QUICK LINKS</p>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <p class="eyebrow-muted">GET IN TOUCH</p>
+      <a href="#" class="copy-email" data-email="jmg.fajardo.26@gmail.com">jmg.fajardo.26@gmail.com</a>
+      <a href="#">+63 915 648 0805</a>
+      <a href="#">Los Baños, Laguna, PH</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="caption">© 2026 Jean Mervin Fajardo. All rights reserved.</span>
+    <span class="caption">Built with care in the Philippines</span>
+  </div>
+</footer>
+
+<button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

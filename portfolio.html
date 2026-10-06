@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jean Mervin Fajardo — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+(function(){
+  var saved = localStorage.getItem('theme');
+  var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+</head>
+<body>
+
+<header>
+  <div class="header-bar">
+    <div class="logo">
+      <span class="logo-mark">JM</span>
+      <span class="logo-name">Jean Mervin Fajardo</span>
+    </div>
+    <div class="header-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+      <span class="theme-icon theme-icon-sun">&#9728;</span>
+      <span class="theme-icon theme-icon-moon">&#9789;</span>
+    </button>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-group">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+    </div>
+    </div>
+  </div>
+</header>
+
+<section class="services-hero" style="padding-bottom:50px;">
+  <span class="tag">MY WORK</span>
+  <h1 class="center">Projects I've designed and built</h1>
+  <p class="body-lg" style="max-width:680px;">A mix of full-stack systems built for a real small business, and front-end projects built to learn and explore.</p>
+</section>
+
+<div class="filter-row" id="filterRow">
+  <button class="tag active" data-filter="all">All Projects</button>
+  <button class="tag" data-filter="full-stack">Full-Stack Apps</button>
+  <button class="tag" data-filter="front-end">Front-End</button>
+</div>
+
+<p class="caption filter-empty" id="filterEmpty" style="display:none; text-align:center; padding:0 20px 20px;">No projects in this category yet.</p>
+
+<section class="project-grid" id="projectGrid">
+  <div class="row">
+    <div class="project-card-big" data-category="full-stack">
+      <div class="thumb-wrap">
+      <img class="project-thumb" src="thumbs/tricoffee.jpg" alt="Tricoffee Inventory Management System thumbnail">
+        <span class="thumb-overlay">View Project →</span>
+      </div>
+      <div class="project-body">
+        <span class="tag">Full-Stack App</span>
+        <h3 style="font-size:20px;">Tricoffee Inventory Management System</h3>
+        <p class="body">A full-stack Flask inventory system managing stock across two coffee shop branches, with a branch-to-branch stock "Borrow" feature and bulk stock operations. Hardened with CSRF protection, rate limiting, and account lockout on login.</p>
+        <div class="stack-row"><span>Python</span><span>·</span><span>Flask</span><span>·</span><span>PostgreSQL / Neon</span><span>·</span><span>Render</span></div>
+        <div class="link-row"><a href="https://tricoffee-inventory.onrender.com">View live site →</a><a href="https://github.com/JeanMervin">View code →</a></div>
+      </div>
+    </div>
+    <div class="project-card-big" data-category="full-stack">
+      <div class="thumb-wrap">
+      <img class="project-thumb" src="thumbs/eldgepos.jpg" alt="EldgePOS thumbnail">
+        <span class="thumb-overlay">View Project →</span>
+      </div>
+      <div class="project-body">
+        <span class="tag">Full-Stack App</span>
+        <h3 style="font-size:20px;">EldgePOS — Point of Sale System</h3>
+        <p class="body">A web-based point-of-sale application for a bookbinding and printing shop, handling printing, photocopying, binding, and lamination orders, deployed and maintained as a live application on Render.</p>
+        <div class="stack-row"><span>Python</span><span>·</span><span>Flask</span><span>·</span><span>PostgreSQL</span><span>·</span><span>Render</span></div>
+        <div class="link-row"><a href="https://eldgepos.onrender.com">View live site →</a><a href="https://github.com/JeanMervin">View code →</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="project-card-big" data-category="front-end">
+      <div class="thumb-wrap">
+      <img class="project-thumb" src="thumbs/portfolio-site.jpg" alt="Personal Website Portfolio thumbnail">
+        <span class="thumb-overlay">View Project →</span>
+      </div>
+      <div class="project-body">
+        <span class="tag">Front-End</span>
+        <h3 style="font-size:20px;">Personal Website Portfolio</h3>
+        <p class="body">My original personal portfolio site, built from scratch with HTML, CSS, and JavaScript to showcase my skills and projects, hosted on Netlify.</p>
+        <div class="stack-row"><span>HTML</span><span>·</span><span>CSS</span><span>·</span><span>JavaScript</span><span>·</span><span>Netlify</span></div>
+        <div class="link-row"><a href="https://jeanmervin.netlify.app/">View live site →</a><a href="https://github.com/JeanMervin">View code →</a></div>
+      </div>
+    </div>
+    <div class="project-card-big" data-category="front-end">
+      <div class="thumb-wrap">
+      <img class="project-thumb" src="thumbs/password-gen.jpg" alt="Password Generator thumbnail">
+        <span class="thumb-overlay">View Project →</span>
+      </div>
+      <div class="project-body">
+        <span class="tag">Front-End</span>
+        <h3 style="font-size:20px;">Password Generator</h3>
+        <p class="body">A small utility project for generating secure, customizable passwords, built to practice front-end logic and interface design.</p>
+        <div class="stack-row"><span>HTML</span><span>·</span><span>CSS</span><span>·</span><span>JavaScript</span></div>
+        <div class="link-row"><a href="https://github.com/JeanMervin">View code →</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="project-card-big" data-category="front-end">
+      <div class="thumb-wrap">
+      <img class="project-thumb" src="thumbs/hobbytrack.jpg" alt="HobbyTrack thumbnail">
+        <span class="thumb-overlay">View Project →</span>
+      </div>
+      <div class="project-body">
+        <span class="tag">Front-End</span>
+        <h3 style="font-size:20px;">HobbyTrack</h3>
+        <p class="body">An activity and streak tracker for personal hobbies — log sessions, keep goals on track, and see progress over time with a GitHub-style activity heatmap.</p>
+        <div class="stack-row"><span>HTML</span><span>·</span><span>CSS</span><span>·</span><span>JavaScript</span></div>
+        <div class="link-row"><a href="https://github.com/JeanMervin">View code →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-wrap" style="padding-top:30px;">
+  <div class="cta-banner">
+    <div>
+      <h2>Like what you see?</h2>
+      <p>Let's talk about building something like this for you.</p>
+    </div>
+    <a href="contact.html" class="btn btn-white">Start a Project</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col1">
+      <div class="logo">
+        <span class="logo-mark">JM</span>
+        <span class="logo-name">Jean Mervin Fajardo</span>
+      </div>
+      <p class="body">IT student and freelance full-stack developer building fast, reliable web apps for small businesses in Los Baños, Laguna and beyond.</p>
+      <div class="social">
+        <a href="https://github.com/JeanMervin">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <p class="eyebrow-muted">QUICK LINKS</p>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <p class="eyebrow-muted">GET IN TOUCH</p>
+      <a href="#" class="copy-email" data-email="jmg.fajardo.26@gmail.com">jmg.fajardo.26@gmail.com</a>
+      <a href="#">+63 915 648 0805</a>
+      <a href="#">Los Baños, Laguna, PH</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="caption">© 2026 Jean Mervin Fajardo. All rights reserved.</span>
+    <span class="caption">Built with care in the Philippines</span>
+  </div>
+</footer>
+
+<button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

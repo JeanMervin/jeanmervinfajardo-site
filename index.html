@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jean Mervin Fajardo — Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+(function(){
+  var saved = localStorage.getItem('theme');
+  var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+</head>
+<body>
+
+<header>
+  <div class="header-bar">
+    <div class="logo">
+      <span class="logo-mark">JM</span>
+      <span class="logo-name">Jean Mervin Fajardo</span>
+    </div>
+    <div class="header-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+      <span class="theme-icon theme-icon-sun">&#9728;</span>
+      <span class="theme-icon theme-icon-moon">&#9789;</span>
+    </button>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-group">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+    </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-left">
+    <span class="tag">★ AVAILABLE FOR FREELANCE WORK</span>
+    <h1>I design and build websites that help small businesses grow online.</h1>
+    <p class="body-lg">I'm Jean Mervin, an IT student and full-stack developer specializing in clean, responsive front-ends and secure Flask + PostgreSQL back-ends, from first sketch to live deployment.</p>
+    <div class="btn-row">
+      <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+      <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+    </div>
+  </div>
+  <img class="hero-photo" src="images/hero-photo.jpg" alt="Jean Mervin Fajardo">
+</section>
+
+<section class="section-alt section-tight">
+  <p class="eyebrow-muted">TECH STACK I WORK WITH</p>
+  <div class="tech-row">
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">JavaScript</span>
+    <span class="tag">Python</span>
+    <span class="tag">Flask</span>
+    <span class="tag">PostgreSQL</span>
+    <span class="tag">Git &amp; GitHub</span>
+    <span class="tag">Render</span>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <div class="stack">
+      <p class="eyebrow">WHAT I OFFER</p>
+      <h2>Services built around your business needs</h2>
+    </div>
+    <a href="services.html" class="link">See all services →</a>
+  </div>
+  <div class="cards-row">
+    <div class="service-card">
+      <span class="icon-chip">01</span>
+      <h3>Website Design &amp; Development</h3>
+      <p class="body">Custom, responsive websites built with clean semantic code and modern design principles.</p>
+    </div>
+    <div class="service-card">
+      <span class="icon-chip">02</span>
+      <h3>Full-Stack Web Applications</h3>
+      <p class="body">End-to-end apps with Flask backends, PostgreSQL databases, and secure authentication flows.</p>
+    </div>
+    <div class="service-card">
+      <span class="icon-chip">03</span>
+      <h3>Deployment &amp; Maintenance</h3>
+      <p class="body">Cloud deployment, database migration, and ongoing technical support after launch.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="section-head">
+    <div class="stack">
+      <p class="eyebrow">SELECTED WORK</p>
+      <h2>Recent projects I've shipped</h2>
+    </div>
+    <a href="portfolio.html" class="link">See all projects →</a>
+  </div>
+  <div class="cards-row">
+    <a class="project-card" href="https://tricoffee-inventory.onrender.com" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img class="project-thumb" src="thumbs/tricoffee.jpg" alt="Tricoffee Inventory System thumbnail">
+        <span class="thumb-overlay">View Project →</span>
+      </div>
+      <div class="project-body">
+        <span class="tag">Full-Stack App</span>
+        <h3>Tricoffee Inventory System</h3>
+        <p class="body">Multi-branch inventory system for a coffee shop with a branch-to-branch stock borrow feature and bulk operations.</p>
+        <div class="stack-row"><span>Flask</span><span>·</span><span>PostgreSQL</span><span>·</span><span>Render</span></div>
+      </div>
+    </a>
+    <a class="project-card" href="https://eldgepos.onrender.com" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img class="project-thumb" src="thumbs/eldgepos.jpg" alt="EldgePOS thumbnail">
+        <span class="thumb-overlay">View Project →</span>
+      </div>
+      <div class="project-body">
+        <span class="tag">Point of Sale</span>
+        <h3>EldgePOS</h3>
+        <p class="body">Web-based point-of-sale application for a bookbinding and printing shop, deployed and maintained on Render.</p>
+        <div class="stack-row"><span>Flask</span><span>·</span><span>PostgreSQL</span></div>
+      </div>
+    </a>
+    <a class="project-card" href="https://jeanmervin.netlify.app/" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img class="project-thumb" src="thumbs/portfolio-site.jpg" alt="Personal Portfolio Site thumbnail">
+        <span class="thumb-overlay">View Project →</span>
+      </div>
+      <div class="project-body">
+        <span class="tag">Front-End</span>
+        <h3>Personal Portfolio Site</h3>
+        <p class="body">A personal portfolio built from scratch to showcase projects and skills, hosted on Netlify.</p>
+        <div class="stack-row"><span>HTML</span><span>·</span><span>CSS</span><span>·</span><span>JavaScript</span></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div class="cta-wrap">
+  <div class="cta-banner">
+    <div>
+      <h2>Have a project in mind?</h2>
+      <p>Let's talk about how a clean, fast website can help your business.</p>
+    </div>
+    <a href="contact.html" class="btn btn-white">Start a Conversation</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col1">
+      <div class="logo">
+        <span class="logo-mark">JM</span>
+        <span class="logo-name">Jean Mervin Fajardo</span>
+      </div>
+      <p class="body">IT student and freelance full-stack developer building fast, reliable web apps for small businesses in Los Baños, Laguna and beyond.</p>
+      <div class="social">
+        <a href="https://github.com/JeanMervin">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <p class="eyebrow-muted">QUICK LINKS</p>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <p class="eyebrow-muted">GET IN TOUCH</p>
+      <a href="#" class="copy-email" data-email="jmg.fajardo.26@gmail.com">jmg.fajardo.26@gmail.com</a>
+      <a href="#">+63 915 648 0805</a>
+      <a href="#">Los Baños, Laguna, PH</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="caption">© 2026 Jean Mervin Fajardo. All rights reserved.</span>
+    <span class="caption">Built with care in the Philippines</span>
+  </div>
+</footer>
+
+<button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
